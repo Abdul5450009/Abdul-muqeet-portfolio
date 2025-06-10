@@ -24,6 +24,17 @@ body {
   z-index: 0;
   /* behind all content */
   transition: top 0.1s ease, left 0.1s ease;
+  animation: changing_color ease 1s infinite normal;
+}
+
+@keyframes changing_color {
+  from {
+    background: #222236;
+  }
+
+  to {
+    background: #2c2c46;
+  }
 }
 
 html {
@@ -94,12 +105,30 @@ li {
   font-size: 1.2rem;
   font-weight: bolder;
   text-decoration-line: none;
+  position: relative;
 }
 
-.navbar>li:hover {
+.navbar>.highlight {
+  /* Changed selector to .highlight */
+  position: absolute;
+  top: 15px;
+  /* left: 0; Will be set by JS */
+  border: 1px solid rgba(54, 54, 81, 0.989);
+  border-radius: 10px;
+  background: rgba(54, 54, 81, 0.989);
+  /* width: 0; Will be set by JS */
+  height: 35px;
+  z-index: -1;
+  transition: all ease 0.5s;
+  opacity: 0;
+  /* Initially hidden */
+  transform: translateX(0); 
+}
+
+/* .navbar>li:hover {
   transition: all 0.5s ease;
   transform: scale(1.2);
-}
+} */
 
 .home_main_section {
   height: 440px;
@@ -206,6 +235,7 @@ li {
   box-shadow: 2px 4px 8px rgba(124, 58, 237, 0.4);
   padding-bottom: 10px;
 }
+
 .card-1:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
