@@ -50,31 +50,37 @@ body {
   color: rgb(0, 0, 0);
 }
 
-#home {
+/* #home {
   position: relative;
   top: 0%;
+  height: 1px;
 }
 
 #about {
   position: relative;
+  height: 1px;
 }
 
 #skill {
   position: relative;
+  height: 1px;
 }
 
 #project {
   position: relative;
+  height: 1px;
   top: -30px;
 }
 
 #contact {
   position: relative;
+  height: 1px;
 }
 
 #Feedback {
   position: relative;
-}
+  height: 1px;
+} */
 
 /* Home section css */
 .navbar_for_mobile {
@@ -757,6 +763,7 @@ li {
   .card-2 {
     margin-top: 20px;
     width: 250px;
+    margin-bottom: 30px;
   }
 
   .card-2>h1 {
@@ -800,11 +807,11 @@ li {
     height: 60px;
   }
 
-  #about {
-    top: 80%;
+  #aboutsection {
+    top: 80px;
   }
 
-  #skill {
+  /*#skill {
     top: 170%;
   }
 
@@ -818,7 +825,7 @@ li {
 
   #Feedback {
     top: 710%;
-  }
+  } */
 
   /* Project section media query */
   .Project_main_section {
